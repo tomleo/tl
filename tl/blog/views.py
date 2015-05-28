@@ -5,3 +5,4 @@ def home(request):
         'name': 'Tom Leo',
     }
     return render(request, 'blog/index.html', context)
+
