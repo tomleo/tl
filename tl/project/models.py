@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Technology(models.Model):
     """
     name
@@ -11,14 +12,18 @@ class Technology(models.Model):
     """
     pass
 
+
 class Category(Technology):
     pass
+
 
 class Framework(Technology):
     pass
 
+
 class Lanuages(Technology):
     pass
+
 
 class Project(models.Model):
     """
@@ -28,4 +33,3 @@ class Project(models.Model):
     frameworks -> one-to-many Framework
     """
     pass
-
