@@ -2,15 +2,13 @@ from django.db import models
 
 
 class Technology(models.Model):
-    """
-    name
-    description
+    name = models.CharField(max_length=255)
+    slug = models.CharField(max_length=255)
+    about = models.TextField()
 
-    Reverse relations can be used to compute experience of the lanuage
-
-    This class should be abstract
-    """
-    pass
+    class Meta:
+        abstract = True
+        ordering = ['name']
 
 
 class Category(Technology):
@@ -21,15 +19,18 @@ class Framework(Technology):
     pass
 
 
-class Lanuages(Technology):
+class Lanuage(Technology):
     pass
 
 
 class Project(models.Model):
-    """
-    name
-    languages -> one-to-many Lanuage
-    categories -> one-to-many Category
-    frameworks -> one-to-many Framework
-    """
-    pass
+    name = models.CharField(max_length=255)
+    slug = models.CharField(max_length=255)
+    start_date = models.DateTimeField()
+    end_date = models.DateTimeField(blank=True, null=True)
+    languages = models.ManyToManyField(Lanuage, blank=True)
+    categories = models.ManyToManyField(Category, blank=True)
+    framework = models.ManyToManyField(Framework, blank=True)
+
+    def __str__(self):
+        return u'{}'.format(self.slug)
