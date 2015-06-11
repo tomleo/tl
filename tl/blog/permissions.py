@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+
 from rest_framework import permissions
 
 class IsAuthorOrReadOnly(permissions.BasePermission):
