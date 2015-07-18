@@ -2,3 +2,6 @@ venv/
 *.sqlite3
 *.swp
 __pycache__
+env/
+/tl.sublime-project
+/tl.sublime-workspace
