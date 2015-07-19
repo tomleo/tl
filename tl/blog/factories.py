@@ -24,4 +24,3 @@ class PostFactory(factory.django.DjangoModelFactory):
     title = factory.LazyAttribute(lambda x: faker.catch_phrase())
     intro = factory.LazyAttribute(lambda x: faker.sentence())
     content = factory.LazyAttribute(lambda x: faker.paragraph())
-

@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
 
 from .models import Post
 
@@ -17,8 +16,9 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('author', 'title', 'slug', 'published', 'intro', 'content')
 
     def save(self, *args, **kwargs):
-        #TODO: custom logic to parse rst files
+        # TODO: custom logic to parse rst files
         super(Post, self).save(*args, **kwargs)
+
 
 class ReStructuredTextSerializer(serializers.ModelSerializer):
 
@@ -27,4 +27,3 @@ class ReStructuredTextSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ('author', 'title', 'intro', 'content')
-

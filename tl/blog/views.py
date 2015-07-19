@@ -1,11 +1,11 @@
-from django.contrib.auth.models import User
 from django.shortcuts import render
-
-from docutils.core import publish_parts
+from django.contrib.auth.models import User
 from rest_framework import generics
 from rest_framework import status
 from rest_framework import permissions
 from rest_framework.views import APIView
+from rest_framework.response import Response
+from docutils.core import publish_parts
 
 from .models import Post
 from .serializers import PostSerializer, ReStructuredTextSerializer
@@ -19,11 +19,15 @@ def home(request):
     return render(request, 'blog/index.html', context)
 
 
+class PostListView(generics.ListAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+
+
 class PostDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAuthorOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsAuthorOrReadOnly)
 
     def preform_create(self, serializer):
         serializer.save(author=self.request.user)
@@ -48,5 +52,4 @@ class HTMLtoReStructuredText(APIView):
                 'content': html_post
             }
             return Response(response)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+        return Response(rst_post.errors, status=status.HTTP_400_BAD_REQUEST)
