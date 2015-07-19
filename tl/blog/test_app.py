@@ -17,4 +17,8 @@ class TestPostDetailView(TestCase):
         response = self.client.get(reverse('post-detail', kwargs={ 'pk': self.post.id }))
         self.assertEqual(response.status_code, 200)
 
+    def test_post_detail_create(self):
+        response = self.client.post(reverse('post-detail'))
 
+    def test_post_detail_delete(self):
+        pass
