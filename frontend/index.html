@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tom Leo</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+        <script type="text/javascript" src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+        <script type="text/javascript" src="bower_components/backbone/backbone.js" charset="utf-8"></script>
+        <script type="text/javascript" src="bower_components/handlebars/handlebars.js" charset="utf-8"></script>
+        <script id="dogTemplate" type="text/template">
+            <%= name %> is <%= color %> and says <%= sound %>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </script>
+        <!--
+        If the block represents an array, Handlebars will iterate through the
+        array and, for each expression, output the value of each matching item
+        in that array.
+        -->
+        <script id="animalTemplate" type="text/x-handlebars-template">
+            <ul>
+                {{#animals}}
+                    <li class="animal">{{ type }} says {{ sound }}</li>
+                {{/animals}}
+            </ul>
+        </script>
+        <script>
+            var Animal = Backbone.Model.extend({
+              defaults: {
+                name: 'Fido',
+                color: 'black',
+                sound: 'woof'
+              },
+              validate: function(attrs, options){
+                if (!attrs.name){
+                    alert('Your animal must have a name!');
+                }
+                if (attrs.name.length < 2){
+                    alert('Your animal\'s name must have more than one letter!');
+                }
+              },
+              sleep: function(){
+                alert(this.get('name') + ' is sleeping.');
+              }
+            });
+
+            var AnimalView = Backbone.View.extend({
+                tagName: 'li',
+                className: 'animal',
+                id: 'dogs',
+                events: {
+                    'click .edit': 'editAnimal',
+                    'click .delete': 'deleteAnimal'
+                },
+                editAnimal: function() {
+                    var newAnimal = prompt("name:", this.model.get('name'));
+                    if(!newAnimal)return;
+                    this.model.set('name', newAnimal);
+                },
+                deleteAnimal: function() {
+                    this.model.destroy();
+                },
+                remove: function() {
+                    this.$el.remove();
+                },
+                initialize: function() {
+                    this.render();
+                    this.model.on('change', this.render, this);
+                    this.model.on('destroy', this.remove, this);
+                },
+                render: function() {
+                    this.$el.html(this.newTemplate(this.model.toJSON()));
+                },
+                newTemplate: _.template($('#dogTemplate').html()),
+            });
+
+            var AnimalCollection = Backbone.Collection.extend({
+              model: Animal
+            });
+
+            var AnimalsView = Backbone.View.extend({ // calling this AnimalsView to distinguish as the view for the collection
+              tagName: 'ul',
+              initialize: function(){
+                this.collection;
+              },
+              render: function(){
+                this.collection.each(function(Animal){
+                  var animalView = new AnimalView({model: Animal});
+                  $(document.body).append(animalView.el);
+                });
+              }
+            });
+
+            var Router = Backbone.Router.extend({
+                routes: {
+                    '': 'index',
+                    'edit/:id': 'edit'
+                },
+                index: function() {
+                    console.log('index route');
+                },
+                edit: function(id) {
+                    console.log('edit route with id: ' + id);
+                }
+            });
+
+
+            var newRouter = new Router;
+            Backbone.history.start();
+
+            // adding individual models to collection
+            var chihuahua = new Animal({name: 'Sugar', color: 'black', sound: 'woof'});
+            var chihuahuaView = new AnimalView({model: chihuahua});
+            var animalCollection = new AnimalCollection(); // only need to create the collection once
+            animalCollection.add(chihuahua);
+
+            var pug = new Animal({name: 'Gizmo', color: 'tan', sound: 'woof'});
+            var pugView = new AnimalView({model: pug});
+            animalCollection.add(pug); // can now directly add to animalCollection
+             
+            // creates view for collection and renders collection
+            var animalsView = new AnimalsView({collection: animalCollection});
+            animalsView.render();
+
+            //$(document.body).html(dogView.el);
+        </script>
+    </body>
+</html>
