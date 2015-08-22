@@ -5,7 +5,6 @@ from django.utils import timezone
 from django.utils.text import slugify
 from django.core.urlresolvers import reverse
 
-
 class Post(models.Model):
     author = models.ForeignKey('auth.User', related_name='posts')
     title = models.CharField(max_length=255)

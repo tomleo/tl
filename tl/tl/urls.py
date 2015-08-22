@@ -26,4 +26,3 @@ urlpatterns = [
     url(r'', include(blog_urls)),
     url(r'', include(project_urls))
 ]
-
