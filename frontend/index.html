@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Tom Leo</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
@@ -25,6 +26,7 @@
                 {{/animals}}
             </ul>
         </script>
+        <script src="app.es5.js"></script>
         <script>
             var Animal = Backbone.Model.extend({
               defaults: {
@@ -125,5 +127,11 @@
 
             //$(document.body).html(dogView.el);
         </script>
+
+        <p class="typeset">
+        <span class="pull-W">W</span>hat if you<span class="push-w"></span> <span class="pull-w">w</span>rote things in nor­mal plain­text
+        But<span class="push-double"></span> <span class="pull-double">“</span>things”<span class="push-w"></span> <span class="pull-w">w</span>ould be - for­mated<span class="push-c"></span> <span class="pull-c">c</span>or­rectly!
+        12′ 2″,
+        </p>
     </body>
 </html>
