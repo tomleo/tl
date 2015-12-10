@@ -22,3 +22,11 @@ body {
  
 .pull-A {margin-left: -0.03em}
 .push-A {margin-right: 0.03em}
+
+#qr-code {
+    display: none;
+}
+
+.color1 { color: blue; }
+.color2 { color: yellow; }
+

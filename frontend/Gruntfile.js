@@ -1,25 +1,24 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
-            sass: {
-                files: '*.scss',
-                tasks: ['sass']
+            css: {
+                files: 'static/css/*.next.css',
+                tasks: ['cssnext']
             },
             scripts: {
-                files: '*.es6.js',
+                files: 'static/js/*.next.js',
                 tasks: ['babel']
             },
-            typeset: {
-                files: '*.html',
-                tasks: ['babel']
-            }
         },
-        sass: {
-            dev: {
-                files: {
-                    'main.css': 'main.scss'
-                }
-            }
+        cssnext: {
+          options: {
+              sourcemap: true
+          },
+          dist: {
+              files: {
+                "static/css/style.current.css": "static/css/style.next.css"
+              }
+          }
         },
         babel: {
             options: {
@@ -27,24 +26,14 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'app.es5.js': 'app.es6.js'
+                    'static/js/app.current.js': 'static/js/app.next.js'
                 }
             }
-        },
-        typeset: {
-            options: {
-                ignore: '.skip',
-                only: '.typeset',
-                dest: 'index.html'
-            },
-            files: [
-                'index.html',
-            ]
         },
         browserSync: {
             default_options: {
                 bsFiles: {
-                    src: ['*.css', '*.html', '*.js']
+                    src: ['static/css/*.current.css', '*.html', 'static/js/*.current.js']
                 },
                 options: {
                     watchTask: true,
@@ -59,13 +48,11 @@ module.exports = function (grunt) {
     });
 
     // load npm tasks
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-babel');
-    grunt.loadNpmTasks('grunt-typeset');
+    grunt.loadNpmTasks("grunt-cssnext")
 
     // define default task
     grunt.registerTask('default', ['browserSync', 'watch']);
-    grunt.registerTask('test', ['typeset']);
 };
