@@ -1,6 +1,3 @@
-body {
-    background: yellow;
-}
 
 /* Small caps */
 .small-caps {font-family: 'Charter SC', serif}
@@ -30,3 +27,16 @@ body {
 .color1 { color: blue; }
 .color2 { color: yellow; }
 
+.test {
+    border-radius: 20px 25px 30%;
+}
+
+a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -5,4 +5,3 @@ console.log(arr.map(function (x) {
   return x * x;
 }));
 console.log("Greetings from es6");
-//# sourceMappingURL=app.es5.js.map
