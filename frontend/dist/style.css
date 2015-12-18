@@ -1,31 +1,41 @@
+/* Text Main */
+.tm {
+    font-family: "Open Sans Condensed";
+    font-size: 3em;
+    line-height: 0.3em;
+}
 
-/* Small caps */
-.small-caps {font-family: 'Charter SC', serif}
- 
-/* Double quote (") marks */
-.pull-double{margin-left:-.38em}
-.push-double{margin-right:.38em}
- 
-/* Single quote (') marks */
-.pull-single{margin-left:-.15em}
-.push-single{margin-right:.15em}
- 
-/* Optical margin alignment for particular letters */
-.pull-T, .pull-V, .pull-W, .pull-Y {margin-left: -0.07em}
-.push-T, .push-V, .push-W, .push-Y {margin-right: 0.07em}
- 
-.pull-O, .pull-C, .pull-o, .pull-c {margin-left: -0.04em}
-.push-O, .push-C, .push-o, .push-c {margin-right: 0.04em}
- 
-.pull-A {margin-left: -0.03em}
-.push-A {margin-right: 0.03em}
+/* Text Accent */
+.ta {
+    font-family: Pacifico;
+    font-weight: 400;
+    font-size: 0.4em;
+    margin-left: -0.3em;
+    text-transform: lowercase;
+}
+
+/* Test Intro */
+.ti {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 1em;
+    display: block;
+    height: 3em;
+    line-height: 2.5;
+    color: #fff;
+    background-color: #000;
+}
+
+
+body {
+    font-family: Georgia;
+}
+
+
 
 #qr-code {
     display: none;
 }
-
-.color1 { color: blue; }
-.color2 { color: yellow; }
 
 .mainlinks li {
     display: inline-block;
