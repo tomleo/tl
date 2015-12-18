@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Input Types</title>
+</head>
+<body>
+
+<form action="http://localhost:3000/input_test.html" method="GET">
+    <label for="id_number">Number</label>
+    <input id="id_number" type="number" name="test-number" name="Number">
+    <br>
+
+    <label for="id_checkbox">Checkbox</label>
+    <input id="id_checkbox" type="checkbox" name="test-checkbox" name="Checkbox">
+    <br>
+
+    <label for="id_color">Color</label>
+    <input id="id_color" type="color" name="test-color" name="Color">
+    <br>
+
+    <label for="id_date">Date</label>
+    <input id="id_date" type="date" name="test-date" name="Date">
+    <br>
+
+    <label for="id_datetime">Datetime</label>
+    <input id="id_datetime" type="datetime" name="test-datetime" name="Datetime">
+    <br>
+
+    <label for="id_datetime_local">Datetime Local</label>
+    <input id="id_datetime_local" type="datetime-local" name="test-datetime-local" name="Datetime Local">
+    <br>
+
+    <label for="id_email">Email</label>
+    <input id="id_email" type="email" name="test-email" name="Email">
+    <br>
+
+    <label for="id_file">File</label>
+    <input id="id_file" type="file" name="test-file" name="File">
+    <br>
+
+    <label for="id_image">Image</label>
+    <input id="id_image" type="image" name="test-image" name="Image">
+    <br>
+
+    <label for="id_month">Month</label>
+    <input id="id_month" type="month" name="test-month" name="Month">
+    <br>
+
+    <label for="id_password">Password</label>
+    <input id="id_password" type="password" name="test-password" name="Password">
+    <br>
+
+    <label for="id_radio">Radio</label>
+    <input id="id_radio" type="radio" name="test-radio" name="Radio">
+    <br>
+
+    <label for="id_range">Range</label>
+    <input id="id_range" type="range" name="test-range" name="Range">
+    <br>
+
+    <label for="id_reset">Reset</label>
+    <input id="id_reset" type="reset" name="test-reset" name="Reset">
+    <br>
+
+    <label for="id_search">Search</label>
+    <input id="id_search" type="search" name="test-search" name="Search">
+    <br>
+
+    <label for="id_tel">Tel</label>
+    <input id="id_tel" type="tel" name="test-tel" name="Tel">
+    <br>
+
+    <label for="id_text">Text</label>
+    <input id="id_text" type="text" name="test-text" name="Text">
+    <br>
+
+    <label for="id_time">Time</label>
+    <input id="id_time" type="time" name="test-time" name="Time">
+    <br>
+
+    <label for="id_url">URL</label>
+    <input id="id_url" type="url" name="test-url" name="URL">
+    <br>
+
+    <label for="id_week">Week</label>
+    <input id="id_week" type="week" name="test-week" name="Week">
+    <br>
+
+    <label for="id_button">Button</label>
+    <input id="id_button" type="button" name="test-button" name="Button" value="Button">
+    <br>
+
+    <label for="id_select">Select</label>
+    <select id="id_select" name="select">
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+    </select>
+    <br>
+
+    <label for="id_textarea">Testarea</label>
+    <textarea></textarea>
+    <br>
+
+    <label for="id_submit">Submit</label>
+    <input id="id_submit" type="submit" name="test-submit" name="submit" value="Submit">
+</form>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="dist/input.js" charset="utf-8"></script>
+</body>
+</html>
