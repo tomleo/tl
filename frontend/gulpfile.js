@@ -1,14 +1,20 @@
-var gulp        = require('gulp');
-var postcss     = require('gulp-postcss');
-var sourcemaps  = require('gulp-sourcemaps');
-var babel       = require('gulp-babel');
-var concat      = require('gulp-concat');
-var browserSync = require('browser-sync').create();
+var gulp         = require('gulp');
+
+// CSS Includes
+var postcss      = require('gulp-postcss');
+var sourcemaps   = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
+var precss       = require('precss');
+
+// JS Includes
+var babel        = require('gulp-babel');
+var concat       = require('gulp-concat');
+var browserSync  = require('browser-sync').create();
 
 gulp.task('css', function () {
     return gulp.src('static/css/**/*.css')
         .pipe( sourcemaps.init() )
-        .pipe( postcss([ require('autoprefixer'), require('precss') ]) )
+        .pipe( postcss([ autoprefixer, precss ]) )
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest('dist/') );
 });
