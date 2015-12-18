@@ -1,8 +1,9 @@
+from __future__ import absolute_import
+
 from django.db import models
 from django.utils import timezone
 from django.utils.text import slugify
 from django.core.urlresolvers import reverse
-
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User', related_name='posts')

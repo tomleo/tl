@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import io
 
 from django.shortcuts import render
@@ -15,10 +16,10 @@ from .permissions import IsAuthorOrReadOnly
 
 
 def home(request):
-    context = {
+    tdict = {
         'name': 'Tom Leo',
     }
-    return render(request, 'blog/index.html', context)
+    return render(request, 'blog/index.html', tdict)
 
 
 class PostListView(generics.ListAPIView):

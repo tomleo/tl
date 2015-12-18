@@ -1,6 +1,9 @@
+from __future__ import absolute_import
+
 import factory
 from faker import Factory as FakeFactory
 from django.contrib.auth.models import User
+
 from blog import models
 
 faker = FakeFactory.create()

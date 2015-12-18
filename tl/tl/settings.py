@@ -68,10 +68,6 @@ TEMPLATES = [
             ],
         },
     },
-    {
-        'BACKEND': 'django.template.backends.jinja2.Jinja2',
-        'APP_DIRS': True,
-    }
 ]
 
 WSGI_APPLICATION = 'tl.wsgi.application'
@@ -79,7 +75,6 @@ WSGI_APPLICATION = 'tl.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

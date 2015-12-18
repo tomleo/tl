@@ -1,0 +1,43 @@
+/* Text Main */
+.tm {
+    font-family: "Open Sans Condensed";
+    font-size: 3em;
+    line-height: 0.3em;
+}
+
+/* Text Accent */
+.ta {
+    font-family: Pacifico;
+    font-weight: 400;
+    font-size: 0.4em;
+    margin-left: -0.3em;
+    text-transform: lowercase;
+}
+
+/* Test Intro */
+.ti {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 1em;
+    display: block;
+    height: 3em;
+    line-height: 2.5;
+    color: #fff;
+    background-color: #000;
+}
+
+
+body {
+    font-family: Georgia;
+}
+
+
+
+#qr-code {
+    display: none;
+}
+
+.mainlinks li {
+    display: inline-block;
+}
+

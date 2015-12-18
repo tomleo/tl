@@ -1,7 +1,8 @@
+from __future__ import absolute_import
+
 from rest_framework import serializers
 
 from .models import Post
-
 
 class PostSerializer(serializers.HyperlinkedModelSerializer):
 
