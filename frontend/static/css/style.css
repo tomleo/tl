@@ -1,8 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer {
+    margin-left: 1em;
+}
+
+footer p {
+    color: rgba(0,0,0,0.6);
+    font-family: "Open Sans Condensed";
+}
+
 /* Text Main */
 .tm {
     font-family: "Open Sans Condensed";
     font-size: 3em;
     line-height: 0.3em;
+    margin-bottom: 0;
 }
 
 /* Text Accent */
@@ -16,6 +31,8 @@
 
 /* Test Intro */
 .ti {
+    margin-left: -1em;
+    padding-left: 1em;
     font-weight: 400;
     font-family: "Open Sans";
     font-size: 1em;
@@ -39,5 +56,87 @@ body {
 
 .mainlinks li {
     display: inline-block;
+    padding: 0 1em 0 1em;
+    text-align: center;
+}
+
+ul.mainlinks {
+    margin: 0;
+    padding: 0;
+}
+
+.mainlinks li:first-child {
+    padding: 0 1em 0 0;
+}
+
+.mainlinks li:last-child {
+    padding: 0 0 0 1em;
+}
+
+.mainlinks li a {
+    text-decoration: none;
+}
+
+.mainlinks li h5 {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    font-family: Pacifico;
+    font-weight: 400;
+}
+
+.mainlinks--text-hover {
+   color: rgba(0,0,0,1); 
+}
+
+.mainlinks li h5:hover {
+    color: rgba(0,0,0,1);
+}
+
+#icon-twitter {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-twitter:hover {
+    fill: rgba(0,0,0,1);
+}
+
+#icon-tumblr {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-tumblr:hover {
+    fill: rgba(0,0,0,1);
+}
+
+#icon-bitbucket {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-bitbucket:hover {
+    fill: rgba(0,0,0,1);
+}
+
+#icon-opensource {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-opensource:hover {
+    fill: rgba(0,0,0,1);
+}
+
+#icon-linkedin {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-linkedin:hover {
+    fill: rgba(0,0,0,1);
+}
+
+#icon-resume {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-resume:hover {
+    fill: rgba(0,0,0,1);
 }
 
