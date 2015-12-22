@@ -7,6 +7,15 @@ header, nav, footer {
     margin-left: 1em;
 }
 
+nav {
+    background-color: rgba(0,0,0,0.1);
+    margin-left: -1em;
+}
+
+nav ul.mainlinks {
+    margin-left: 2em;
+}
+
 footer p {
     color: rgba(0,0,0,0.6);
     font-family: "Open Sans Condensed";
@@ -38,9 +47,10 @@ footer p {
     font-size: 1em;
     display: block;
     height: 3em;
-    line-height: 2.5;
+    line-height: 3em;
     color: #fff;
     background-color: #000;
+    margin-bottom: 0;
 }
 
 
@@ -62,7 +72,7 @@ body {
 
 ul.mainlinks {
     margin: 0;
-    padding: 0;
+    padding: 0.5em 0 0.5em 0;
 }
 
 .mainlinks li:first-child {
@@ -90,6 +100,10 @@ ul.mainlinks {
 
 .mainlinks li h5:hover {
     color: rgba(0,0,0,1);
+}
+
+.mainlinks li svg {
+    width: 30px;
 }
 
 #icon-twitter {
