@@ -1,31 +1,58 @@
+/* Modules */
+h1 {
+    font-family: 'Londrina Outline', cursive;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Londrina Outline', cursive;
+    color: rgba(0,0,0,0.5);
+    margin: 1em 0 0.2em 0;
+}
+
+p {
+    margin-top: 0.2em;
+    font-family: 'Alegreya', serif;
+}
+
+html, body {
+    font-family: 'Alegreya', serif;
+    background-color: rbga(255, 255, 255, 1);
+}
+
+nav {
+    margin-left: -1em;
+}
+
+footer p {
+    color: rgba(0,0,0,0.6);
+    font-family: 'Alegreya', serif;
+}
+
+/* Layout */
 html, body {
     margin: 0;
     padding: 0;
+
 }
 
-header, nav, footer {
+header, footer, #main {
     margin-left: 1em;
 }
 
 nav {
     background-color: rgba(0,0,0,0.1);
-    margin-left: -1em;
 }
 
 nav ul.mainlinks {
     margin-left: 2em;
 }
 
-footer p {
-    color: rgba(0,0,0,0.6);
-    font-family: "Open Sans Condensed";
-}
 
 /* Text Main */
 .tm {
-    font-family: "Open Sans Condensed";
+    font-family: 'Londrina Outline', cursive;
     font-size: 3em;
-    line-height: 0.3em;
+    line-height: 0.9;
     margin-bottom: 0;
 }
 
@@ -36,21 +63,20 @@ footer p {
     font-size: 0.4em;
     margin-left: -0.3em;
     text-transform: lowercase;
+    padding-left: 0.125em;
 }
 
 /* Test Intro */
 .ti {
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    color: rgba(0,0,0,0.8);
+    margin: 0.7em 0 0 0;
+    background-color: rgba(0,0,0,0.2);
     margin-left: -1em;
     padding-left: 1em;
-    font-weight: 400;
-    font-family: "Open Sans";
-    font-size: 1em;
-    display: block;
-    height: 3em;
-    line-height: 3em;
-    color: #fff;
-    background-color: #000;
-    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 
@@ -90,12 +116,13 @@ ul.mainlinks {
 .mainlinks li h5 {
     color: rgba(0, 0, 0, 0.7);
     margin: 0;
-    font-family: Pacifico;
+    font-family: 'Alegreya', serif;
     font-weight: 400;
+
 }
 
 .mainlinks--text-hover {
-   color: rgba(0,0,0,1); 
+   color: rgba(0,0,0,1);
 }
 
 .mainlinks li h5:hover {
@@ -106,51 +133,11 @@ ul.mainlinks {
     width: 30px;
 }
 
-#icon-twitter {
+#icon-twitter, #icon-blog, #icon-bitbucket, #icon-opensource, #icon-linkedin, #icon-resume {
     fill: rgba(0,0,0,0.8);
 }
 
-#icon-twitter:hover {
-    fill: rgba(0,0,0,1);
-}
-
-#icon-tumblr {
-    fill: rgba(0,0,0,0.8);
-}
-
-#icon-tumblr:hover {
-    fill: rgba(0,0,0,1);
-}
-
-#icon-bitbucket {
-    fill: rgba(0,0,0,0.8);
-}
-
-#icon-bitbucket:hover {
-    fill: rgba(0,0,0,1);
-}
-
-#icon-opensource {
-    fill: rgba(0,0,0,0.8);
-}
-
-#icon-opensource:hover {
-    fill: rgba(0,0,0,1);
-}
-
-#icon-linkedin {
-    fill: rgba(0,0,0,0.8);
-}
-
-#icon-linkedin:hover {
-    fill: rgba(0,0,0,1);
-}
-
-#icon-resume {
-    fill: rgba(0,0,0,0.8);
-}
-
-#icon-resume:hover {
+#icon-twitter:hover, #icon-blog:hover, #icon-bitbucket:hover, #icon-opensource:hover, #icon-linkedin:hover, #icon-resume:hover {
     fill: rgba(0,0,0,1);
 }
 
