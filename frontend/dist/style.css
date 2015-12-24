@@ -28,6 +28,27 @@ footer p {
     font-family: 'Alegreya', serif;
 }
 
+a {
+    --link-color: rgba(12, 43, 117, 1);
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid #8D9AAE;
+}
+a:active, .a-is-active {
+
+}
+a:hover, .a-is-hover {
+    border-bottom: 1px solid var(--link-color);
+}
+a:visited, .a-is-visited {
+    --link-color: rgba(127, 55, 173, 0.86);
+}
+
+.fa-external-link {
+    font-size: 0.5em;
+    text-decoration: none;
+}
+
 /* Layout */
 html, body {
     margin: 0;
@@ -38,6 +59,7 @@ html, body {
 header, footer, #main {
     margin-left: 1em;
 }
+
 
 nav {
     background-color: rgba(0,0,0,0.1);
