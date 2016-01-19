@@ -15,6 +15,13 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+import json
+custom_settings = {}
+custom_settings_fname = os.path.join(BASE_DIR, 'custom_settings.json')
+if os.path.exists(custom_settings_fname):
+    with open(custom_settings_fname, 'r+') as f:
+        custom_settings = json.loads(f.read())
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -81,7 +88,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+if custom_settings.get('db'):
+    DATABASES['default'].update(custom_settings.get('db'))
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -101,3 +109,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+if custom_settings.get('static_root'):
+    STATIC_ROOT = custom_settings.get('static_root')
