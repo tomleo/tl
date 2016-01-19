@@ -15,25 +15,25 @@ class Technology(models.Model):
         abstract = True
         ordering = ['name']
 
+    def __str__(self):
+        return u'{}'.format(self.slug)
+
 
 class Category(Technology):
     pass
 
-
 class Framework(Technology):
     pass
 
-
-class Lanuage(Technology):
+class Language(Technology):
     pass
-
 
 class Project(models.Model):
     name = models.CharField(max_length=255)
     slug = models.CharField(max_length=255)
     start_date = models.DateTimeField()
     end_date = models.DateTimeField(blank=True, null=True)
-    languages = models.ManyToManyField(Lanuage, blank=True)
+    languages = models.ManyToManyField(Language, blank=True)
     categories = models.ManyToManyField(Category, blank=True)
     framework = models.ManyToManyField(Framework, blank=True)
 
@@ -46,6 +46,8 @@ class Project(models.Model):
     def save(self, *args, **kwargs):
         if not self.id:
             self.slug = slugify(self.name)
+        if not self.start_date:
+            self.start_date = timezone.now()
         super(Project, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
