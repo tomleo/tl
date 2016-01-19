@@ -1,34 +1,144 @@
+/* Modules */
+h1 {
+    font-family: 'Londrina Outline', cursive;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Londrina Outline', cursive;
+    color: rgba(0,0,0,0.5);
+    margin: 1em 0 0.2em 0;
+}
 
-/* Small caps */
-.small-caps {font-family: 'Charter SC', serif}
- 
-/* Double quote (") marks */
-.pull-double{margin-left:-.38em}
-.push-double{margin-right:.38em}
- 
-/* Single quote (') marks */
-.pull-single{margin-left:-.15em}
-.push-single{margin-right:.15em}
- 
-/* Optical margin alignment for particular letters */
-.pull-T, .pull-V, .pull-W, .pull-Y {margin-left: -0.07em}
-.push-T, .push-V, .push-W, .push-Y {margin-right: 0.07em}
- 
-.pull-O, .pull-C, .pull-o, .pull-c {margin-left: -0.04em}
-.push-O, .push-C, .push-o, .push-c {margin-right: 0.04em}
- 
-.pull-A {margin-left: -0.03em}
-.push-A {margin-right: 0.03em}
+p {
+    margin-top: 0.2em;
+    font-family: 'Alegreya', serif;
+}
+
+html, body {
+    font-family: 'Alegreya', serif;
+    background-color: rbga(255, 255, 255, 1);
+}
+
+nav {
+    margin-left: -1em;
+}
+
+footer p {
+    color: rgba(0,0,0,0.6);
+    font-family: 'Alegreya', serif;
+}
+
+/* Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+header, footer, #main {
+    margin-left: 1em;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.1);
+}
+
+nav ul.mainlinks {
+    margin-left: 2em;
+}
+
+
+/* Text Main */
+.tm {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 3em;
+    line-height: 0.9;
+    margin-bottom: 0;
+}
+
+/* Text Accent */
+.ta {
+    font-family: Pacifico;
+    font-weight: 400;
+    font-size: 0.4em;
+    margin-left: -0.3em;
+    text-transform: lowercase;
+    padding-left: 0.125em;
+}
+
+/* Test Intro */
+.ti {
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    color: rgba(0,0,0,0.8);
+    margin: 0.7em 0 0 0;
+    background-color: rgba(0,0,0,0.2);
+    margin-left: -1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+body {
+    font-family: Georgia;
+}
+
+
 
 #qr-code {
     display: none;
 }
 
-.color1 { color: blue; }
-.color2 { color: yellow; }
-
 .mainlinks li {
     display: inline-block;
+    padding: 0 1em 0 1em;
+    text-align: center;
+}
+
+ul.mainlinks {
+    margin: 0;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.mainlinks li:first-child {
+    padding: 0 1em 0 0;
+}
+
+.mainlinks li:last-child {
+    padding: 0 0 0 1em;
+}
+
+.mainlinks li a {
+    text-decoration: none;
+}
+
+.mainlinks li h5 {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+
+}
+
+.mainlinks--text-hover {
+   color: rgba(0,0,0,1);
+}
+
+.mainlinks li h5:hover {
+    color: rgba(0,0,0,1);
+}
+
+.mainlinks li svg {
+    width: 30px;
+}
+
+#icon-twitter, #icon-blog, #icon-bitbucket, #icon-opensource, #icon-linkedin, #icon-resume {
+    fill: rgba(0,0,0,0.8);
+}
+
+#icon-twitter:hover, #icon-blog:hover, #icon-bitbucket:hover, #icon-opensource:hover, #icon-linkedin:hover, #icon-resume:hover {
+    fill: rgba(0,0,0,1);
 }
 
 
