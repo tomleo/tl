@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1 class="tm">TomLeo<span class="ta">.com</span></h1>
-        <p class="ti">I'm a web developer from Boston</p>
+        <p id="test-wording" class="ti">I'm a web developer from Boston</p>
     </header>
     <nav>
         <ul class="mainlinks">
@@ -314,11 +314,22 @@
         <p><small>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></small></p>
         <p>Thomas Leo © 2007-2016</p>
     </footer>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-    <script type="text/javascript" src="bower_components/underscore/underscore.js" charset="utf-8"></script>
-    <script type="text/javascript" src="bower_components/backbone/backbone.js" charset="utf-8"></script>
-    <script type="text/javascript" src="bower_components/handlebars/handlebars.js" charset="utf-8"></script>
-    <script type="text/javascript" src="dist/app.js" charset="utf-8"></script>
+
+    <script src="//www.google-analytics.com/cx/api.js?experiment=fV3I_ujKRP-qWOhoadlSyQ"></script>
+    <script>
+        var variationNumber = cxApi.chooseVariation();
+        if (variationNumber == cxApi.ORIGINAL_VARIATION) {
+            console.log("Original: " + variationNumber);
+        } else {
+            console.log("Variation: " + variationNumber);
+        }
+        window.onload = function(){
+            var test_elem = document.getElementsById('test-wording');
+            if (variationNumber != cxApi.ORIGINAL_VARIATION) {
+                test_elem.innerHTML = 'I\'m an Uber Haxor from Boston';
+            }
+        }
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -327,5 +338,14 @@
       ga('create', 'UA-44062559-1', 'auto');
       ga('send', 'pageview');
     </script>
+
+    <!--
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script type="text/javascript" src="bower_components/backbone/backbone.js" charset="utf-8"></script>
+    <script type="text/javascript" src="bower_components/handlebars/handlebars.js" charset="utf-8"></script>
+    <script type="text/javascript" src="dist/app.js" charset="utf-8"></script>
+    -->
+
 </body>
 </html>
