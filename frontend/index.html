@@ -324,7 +324,7 @@
             console.log("Variation: " + variationNumber);
         }
         window.onload = function(){
-            var test_elem = document.getElementsById('test-wording');
+            var test_elem = document.getElementById('test-wording')
             if (variationNumber != cxApi.ORIGINAL_VARIATION) {
                 test_elem.innerHTML = 'I\'m an Uber Haxor from Boston';
             }
