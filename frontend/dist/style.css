@@ -141,5 +141,6 @@ ul.mainlinks {
     fill: rgba(0,0,0,1);
 }
 
-
+#blue-pill { color: white; background-color: blue; border-radius: 20px; border-color: blue;}
+#red-pill { color: white; background-color: red; border-radius: 20px; border-color: red;}
 /*# sourceMappingURL=style.css.map */
