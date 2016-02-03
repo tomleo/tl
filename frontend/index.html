@@ -315,6 +315,9 @@
         </blockquote>
         <button id="blue-pill">Blue Pill</button>
         <button id="red-pill">Red Pill</button>
+        <h3>Yellow vs. Pink</h3>
+        <button id="yellow-pill">Yellow Pill</button>
+        <button id="pink-pill">Pink Pill</button>
         <h3>Start Funnel</h3>
         <a href="funnel/page1.html">Goto: Page 1</a>
     </div>
@@ -331,7 +334,7 @@
         } else {
             console.log("Variation: " + variationNumber);
         }
-        window.onload = function(){
+        window.onload = function() {
             var test_elem = document.getElementById('test-wording')
             if (variationNumber != cxApi.ORIGINAL_VARIATION) {
                 test_elem.innerHTML = 'I\'m an Uber Haxor from Boston';
@@ -351,6 +354,8 @@
         }
         var btn_bluepill = document.getElementById('blue-pill');
         var btn_redpill = document.getElementById('red-pill');
+        var btn_yellowpill = document.getElementById('yellow-pill');
+        var btn_pinkpill = document.getElementById('pink-pill');
 
         /* 
         Do I set the dimention before send to pageview?
@@ -380,6 +385,28 @@
                 eventAction: 'click',
                 hitCallback: function() {
                     console.log("User chose the Blue Pill");
+                }
+            });
+        });
+
+        btn_yellowpill.addEventListener('click', function() {
+            e.preventDefault();
+            ga('send', 'event', {
+                eventCategory: 'Yellow Pill: ' + get_dimention_from_variation(cxApi.chooseVariation()),
+                eventAction: 'click',
+                hitCallback: function() {
+                    console.log("User chose the Yellow Pill");
+                }
+            });
+        });
+
+        btn_pinkpill.addEventListener('click', function() {
+            e.preventDefault();
+            ga('send', 'event', {
+                eventCategory: 'Pink Pill: ' + get_dimention_from_variation(cxApi.chooseVariation()),
+                eventAction: 'click',
+                hitCallback: function() {
+                    console.log("User chose the Pink Pill");
                 }
             });
         });
