@@ -4,6 +4,8 @@
     --secondaryFont: 'Alegreya', serif;
     --accentFont: Pacifico;
     --primaryAltFont: 'Londrina Solid', cursive;
+    --nav-bgcolor: rgba(0,0,0,0.1);
+    --link-color: rgba(12, 43, 117, 1);
 }
 
 /* Modules */
@@ -36,6 +38,30 @@ footer p {
     font-family: var(--secondaryFont);
 }
 
+a {
+    
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid #8D9AAE;
+}
+a:active,
+.a-is-active {
+
+}
+a:hover,
+.a-is-hover {
+    border-bottom: 1px solid var(--link-color);
+}
+a:visited,
+.a-is-visited {
+    color: rgba(127, 55, 173, 0.86);
+}
+
+.fa-external-link {
+    font-size: 0.5em;
+    text-decoration: none;
+}
+
 /* Layout */
 html, body {
     margin: 0;
@@ -47,8 +73,9 @@ header, footer, #main {
     margin-left: 1em;
 }
 
+
 nav {
-    background-color: rgba(0,0,0,0.1);
+    background-color: var(--nav-bgcolor);
 }
 
 nav ul.mainlinks {

@@ -38,7 +38,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('serve', ['css', 'js'], function() {
-    
+
     browserSync.init({
         server: {
             baseDir: './'
@@ -50,6 +50,7 @@ gulp.task('serve', ['css', 'js'], function() {
     gulp.watch('*.html').on('change', browserSync.reload);
     gulp.watch('dist/style.css').on('change', browserSync.reload);
     gulp.watch('dist/app.js').on('change', browserSync.reload);
+
 });
 
 gulp.task('default', ['serve'])
