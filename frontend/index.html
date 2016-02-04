@@ -403,8 +403,9 @@
         btn_pinkpill.addEventListener('click', function(e) {
             e.preventDefault();
             ga('send', 'event', {
-                eventCategory: 'Pink Pill: ' + get_dimention_from_variation(cxApi.chooseVariation()),
+                eventCategory: 'Pink Pill',
                 eventAction: 'click',
+                eventLabel: get_dimention_from_variation(cxApi.chooseVariation())
                 hitCallback: function() {
                     console.log("User chose the Pink Pill");
                 }
