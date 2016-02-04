@@ -5,6 +5,7 @@
     --accentFont: Pacifico;
     --primaryAltFont: 'Londrina Solid', cursive;
     --nav-bgcolor: rgba(0,0,0,0.1);
+    --link-color: rgba(12, 43, 117, 1);
 }
 
 /* Modules */
@@ -38,7 +39,7 @@ footer p {
 }
 
 a {
-    --link-color: rgba(12, 43, 117, 1);
+    
     color: var(--link-color);
     text-decoration: none;
     border-bottom: 1px solid #8D9AAE;
@@ -53,7 +54,7 @@ a:hover,
 }
 a:visited,
 .a-is-visited {
-    --link-color: rgba(127, 55, 173, 0.86);
+    color: rgba(127, 55, 173, 0.86);
 }
 
 .fa-external-link {

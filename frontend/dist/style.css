@@ -29,8 +29,8 @@ footer p {
 }
 
 a {
-    --link-color: rgba(12, 43, 117, 1);
-    color: var(--link-color);
+    
+    color: rgba(12, 43, 117, 1);
     text-decoration: none;
     border-bottom: 1px solid #8D9AAE;
 }
@@ -38,10 +38,10 @@ a:active, .a-is-active {
 
 }
 a:hover, .a-is-hover {
-    border-bottom: 1px solid var(--link-color);
+    border-bottom: 1px solid rgba(12, 43, 117, 1);
 }
 a:visited, .a-is-visited {
-    --link-color: rgba(127, 55, 173, 0.86);
+    color: rgba(127, 55, 173, 0.86);
 }
 
 .fa-external-link {
