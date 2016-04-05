@@ -307,111 +307,13 @@
     <div id="main">
         <h2>About</h2>
         <p>
-        I like to write code & hike mountains.
+        I like to write code, cook food, & hike mountains.
         </p>
-        <h3>Red vs. Blue</h3>
-        <blockquote>
-        "You take the blue pill, the story ends. You wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in wonderland, and I show you how deep the rabbit hole goes." ― Morpheus
-        </blockquote>
-        <button id="blue-pill">Blue Pill</button>
-        <button id="red-pill">Red Pill</button>
-        <h3>Yellow vs. Pink</h3>
-        <button id="yellow-pill">Yellow Pill</button>
-        <button id="pink-pill">Pink Pill</button>
-        <h3>Start Funnel</h3>
-        <a href="funnel/page1.html">Goto: Page 1</a>
     </div>
     <footer>
         <p><small>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></small></p>
         <p>Thomas Leo © 2007-2016</p>
     </footer>
-
-    <script src="//www.google-analytics.com/cx/api.js?experiment=dnD9ABXPSiWRLMqG_u7oAg"></script>
-    <script>
-        var variationNumber = cxApi.chooseVariation();
-        if (variationNumber == cxApi.ORIGINAL_VARIATION) {
-            console.log("Original: " + variationNumber);
-        } else {
-            console.log("Variation: " + variationNumber);
-        }
-        window.onload = function() {
-            var test_elem = document.getElementById('test-wording')
-            if (variationNumber != cxApi.ORIGINAL_VARIATION) {
-                test_elem.innerHTML = 'I\'m an Uber Haxor from Boston';
-            }
-        }
-
-        ;(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-5346623-1', 'auto');
-        ga('send', 'pageview');
-
-        function get_dimention_from_variation(dimention_num) {
-            var custom_dimentions = ['varOrig', 'var1'];
-            return custom_dimentions[dimention_num];
-        }
-        var btn_bluepill = document.getElementById('blue-pill');
-        var btn_redpill = document.getElementById('red-pill');
-        var btn_yellowpill = document.getElementById('yellow-pill');
-        var btn_pinkpill = document.getElementById('pink-pill');
-
-        /* 
-        Do I set the dimention before send to pageview?
-        Or should I set the dimention before a button click event?
-        */
-        btn_redpill.addEventListener('click', function(e) {
-            e.preventDefault();
-            ga('set', {
-                'dimension1': get_dimention_from_variation(cxApi.chooseVariation())
-            });
-            ga('send', 'event', {
-                eventCategory: 'Red Pill',
-                eventAction: 'click',
-                hitCallback: function() {
-                    console.log("User chose the Red Pill");
-                }
-            });
-        });
-
-        btn_bluepill.addEventListener('click', function(e) {
-            e.preventDefault();
-            ga('set', {
-                'dimension1': get_dimention_from_variation(cxApi.chooseVariation())
-            });
-            ga('send', 'event', {
-                eventCategory: 'Blue Pill',
-                eventAction: 'click',
-                hitCallback: function() {
-                    console.log("User chose the Blue Pill");
-                }
-            });
-        });
-
-        btn_yellowpill.addEventListener('click', function(e) {
-            e.preventDefault();
-            ga('send', 'event', {
-                eventCategory: 'Yellow Pill: ' + get_dimention_from_variation(cxApi.chooseVariation()),
-                eventAction: 'click',
-                hitCallback: function() {
-                    console.log("User chose the Yellow Pill");
-                }
-            });
-        });
-
-        btn_pinkpill.addEventListener('click', function(e) {
-            e.preventDefault();
-            ga('send', 'event', {
-                eventCategory: 'Pink Pill',
-                eventAction: 'click',
-                eventLabel: get_dimention_from_variation(cxApi.chooseVariation()),
-                hitCallback: function() {
-                    console.log("User chose the Pink Pill");
-                }
-            });
-        });
-    </script>
 
     <!--
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
