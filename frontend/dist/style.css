@@ -1,106 +1,94 @@
-.tom-leo {
-  box-shadow:  10px 10px 0 #000000, 20px 10px 0 #000000, 30px 10px 0 #000000, 40px 10px 0 #000000, 50px 10px 0 #000000, 60px 10px 0 #000000, 70px 10px 0 #000000, 80px 10px 0 #000000, 90px 10px 0 #000000, 100px 10px 0 #000000, 110px 10px 0 #000000, 120px 10px 0 #000000, 130px 10px 0 #000000, 140px 10px 0 #000000, 150px 10px 0 #000000, 160px 10px 0 #000000, 170px 10px 0 #000000, 180px 10px 0 #000000, 190px 10px 0 #000000, 200px 10px 0 #000000, 10px 20px 0 #000000, 20px 20px 0 #000000, 30px 20px 0 #000000, 40px 20px 0 #000000, 50px 20px 0 #000000, 70px 20px 0 #795548, 80px 20px 0 #795548, 90px 20px 0 #795548, 100px 20px 0 #795548, 110px 20px 0 #795548, 120px 20px 0 #795548, 150px 20px 0 #000000, 160px 20px 0 #000000, 170px 20px 0 #000000, 10px 30px 0 #000000, 20px 30px 0 #000000, 30px 30px 0 #000000, 40px 30px 0 #000000, 60px 30px 0 #795548, 70px 30px 0 #795548, 80px 30px 0 #795548, 90px 30px 0 #795548, 100px 30px 0 #795548, 110px 30px 0 #795548, 120px 30px 0 #795548, 130px 30px 0 #795548, 150px 30px 0 #000000, 10px 40px 0 #000000, 20px 40px 0 #000000, 30px 40px 0 #000000, 40px 40px 0 #000000, 60px 40px 0 #795548, 70px 40px 0 #795548, 80px 40px 0 #795548, 90px 40px 0 #795548, 100px 40px 0 #795548, 110px 40px 0 #795548, 120px 40px 0 #795548, 130px 40px 0 #795548, 160px 40px 0 #000000, 180px 40px 0 #000000, 10px 50px 0 #000000, 20px 50px 0 #000000, 30px 50px 0 #000000, 40px 50px 0 #000000, 60px 50px 0 #795548, 70px 50px 0 #ffeb3b, 80px 50px 0 #795548, 90px 50px 0 #ffeb3b, 100px 50px 0 #795548, 110px 50px 0 #ffeb3b, 120px 50px 0 #795548, 130px 50px 0 #795548, 160px 50px 0 #000000, 180px 50px 0 #000000, 190px 50px 0 #000000, 200px 50px 0 #000000, 10px 60px 0 #000000, 20px 60px 0 #000000, 30px 60px 0 #000000, 40px 60px 0 #000000, 50px 60px 0 #ffc107, 60px 60px 0 #ffeb3b, 70px 60px 0 #ffeb3b, 80px 60px 0 #ffeb3b, 90px 60px 0 #ffeb3b, 100px 60px 0 #ffeb3b, 110px 60px 0 #ffeb3b, 120px 60px 0 #ffeb3b, 130px 60px 0 #ffeb3b, 140px 60px 0 #ffc107, 160px 60px 0 #000000, 170px 60px 0 #000000, 180px 60px 0 #000000, 190px 60px 0 #000000, 200px 60px 0 #000000, 10px 70px 0 #000000, 20px 70px 0 #000000, 40px 70px 0 #000000, 50px 70px 0 #ffc107, 60px 70px 0 #ffeb3b, 70px 70px 0 #ffeb3b, 80px 70px 0 #ffffff, 90px 70px 0 #ffeb3b, 100px 70px 0 #ffeb3b, 110px 70px 0 #ffffff, 120px 70px 0 #ffeb3b, 130px 70px 0 #ffeb3b, 140px 70px 0 #ffc107, 170px 70px 0 #000000, 180px 70px 0 #000000, 200px 70px 0 #000000, 10px 80px 0 #000000, 20px 80px 0 #000000, 40px 80px 0 #000000, 50px 80px 0 #ffc107, 60px 80px 0 #ffeb3b, 70px 80px 0 #ffeb3b, 80px 80px 0 #ffeb3b, 90px 80px 0 #ffeb3b, 100px 80px 0 #ffeb3b, 110px 80px 0 #ffeb3b, 120px 80px 0 #ffeb3b, 130px 80px 0 #ffeb3b, 140px 80px 0 #ffc107, 170px 80px 0 #000000, 180px 80px 0 #000000, 200px 80px 0 #000000, 10px 90px 0 #000000, 20px 90px 0 #000000, 40px 90px 0 #000000, 60px 90px 0 #ffc107, 70px 90px 0 #ffeb3b, 80px 90px 0 #ffeb3b, 90px 90px 0 #ffeb3b, 100px 90px 0 #ffeb3b, 110px 90px 0 #ffeb3b, 120px 90px 0 #ffeb3b, 130px 90px 0 #ffc107, 160px 90px 0 #000000, 170px 90px 0 #000000, 180px 90px 0 #000000, 10px 100px 0 #000000, 20px 100px 0 #000000, 30px 100px 0 #000000, 40px 100px 0 #000000, 60px 100px 0 #ffc107, 70px 100px 0 #ffeb3b, 80px 100px 0 #ffcdd2, 90px 100px 0 #ffcdd2, 100px 100px 0 #ffcdd2, 110px 100px 0 #ffcdd2, 120px 100px 0 #ffeb3b, 130px 100px 0 #ffc107, 160px 100px 0 #000000, 180px 100px 0 #000000, 200px 100px 0 #000000, 10px 110px 0 #000000, 20px 110px 0 #000000, 30px 110px 0 #000000, 40px 110px 0 #000000, 50px 110px 0 #000000, 70px 110px 0 #ffeb3b, 80px 110px 0 #ffeb3b, 90px 110px 0 #ffeb3b, 100px 110px 0 #ffeb3b, 110px 110px 0 #ffeb3b, 120px 110px 0 #ffeb3b, 140px 110px 0 #000000, 150px 110px 0 #000000, 160px 110px 0 #000000, 180px 110px 0 #000000, 200px 110px 0 #000000, 10px 120px 0 #000000, 20px 120px 0 #000000, 40px 120px 0 #000000, 50px 120px 0 #000000, 60px 120px 0 #000000, 80px 120px 0 #ffeb3b, 90px 120px 0 #ffeb3b, 100px 120px 0 #ffeb3b, 110px 120px 0 #ffeb3b, 130px 120px 0 #000000, 140px 120px 0 #000000, 150px 120px 0 #000000, 160px 120px 0 #000000, 180px 120px 0 #000000, 200px 120px 0 #000000, 10px 130px 0 #000000, 20px 130px 0 #000000, 40px 130px 0 #000000, 60px 130px 0 #000000, 90px 130px 0 #ffeb3b, 100px 130px 0 #ffeb3b, 120px 130px 0 #000000, 130px 130px 0 #000000, 140px 130px 0 #000000, 150px 130px 0 #000000, 160px 130px 0 #000000, 180px 130px 0 #000000, 200px 130px 0 #000000, 10px 140px 0 #000000, 20px 140px 0 #000000, 40px 140px 0 #000000, 70px 140px 0 #000000, 80px 140px 0 #000000, 90px 140px 0 #ffeb3b, 100px 140px 0 #ffeb3b, 120px 140px 0 #000000, 130px 140px 0 #000000, 140px 140px 0 #000000, 160px 140px 0 #000000, 170px 140px 0 #000000, 180px 140px 0 #000000, 200px 140px 0 #000000, 10px 150px 0 #000000, 20px 150px 0 #000000, 90px 150px 0 #ffeb3b, 100px 150px 0 #ffeb3b, 120px 150px 0 #000000, 130px 150px 0 #000000, 10px 160px 0 #000000, 20px 160px 0 #3f51b5, 30px 160px 0 #03a9f4, 40px 160px 0 #03a9f4, 50px 160px 0 #03a9f4, 60px 160px 0 #3f51b5, 70px 160px 0 #3f51b5, 80px 160px 0 #3f51b5, 90px 160px 0 #ffc107, 100px 160px 0 #ffc107, 110px 160px 0 #3f51b5, 120px 160px 0 #3f51b5, 130px 160px 0 #3f51b5, 140px 160px 0 #03a9f4, 150px 160px 0 #03a9f4, 160px 160px 0 #03a9f4, 170px 160px 0 #3f51b5, 180px 160px 0 #000000, 190px 160px 0 #000000, 10px 170px 0 #3f51b5, 20px 170px 0 #03a9f4, 30px 170px 0 #03a9f4, 40px 170px 0 #03a9f4, 50px 170px 0 #03a9f4, 60px 170px 0 #03a9f4, 70px 170px 0 #03a9f4, 80px 170px 0 #3f51b5, 90px 170px 0 #3f51b5, 100px 170px 0 #3f51b5, 110px 170px 0 #3f51b5, 120px 170px 0 #03a9f4, 130px 170px 0 #03a9f4, 140px 170px 0 #03a9f4, 150px 170px 0 #03a9f4, 160px 170px 0 #03a9f4, 170px 170px 0 #03a9f4, 180px 170px 0 #3f51b5, 10px 180px 0 #03a9f4, 20px 180px 0 #03a9f4, 30px 180px 0 #03a9f4, 40px 180px 0 #03a9f4, 50px 180px 0 #03a9f4, 60px 180px 0 #03a9f4, 70px 180px 0 #03a9f4, 80px 180px 0 #03a9f4, 90px 180px 0 #03a9f4, 100px 180px 0 #03a9f4, 110px 180px 0 #03a9f4, 120px 180px 0 #03a9f4, 130px 180px 0 #03a9f4, 140px 180px 0 #03a9f4, 150px 180px 0 #03a9f4, 160px 180px 0 #03a9f4, 170px 180px 0 #03a9f4, 180px 180px 0 #03a9f4, 10px 190px 0 #03a9f4, 20px 190px 0 #03a9f4, 30px 190px 0 #03a9f4, 40px 190px 0 #3f51b5, 50px 190px 0 #3f51b5, 60px 190px 0 #03a9f4, 70px 190px 0 #03a9f4, 80px 190px 0 #03a9f4, 90px 190px 0 #03a9f4, 100px 190px 0 #03a9f4, 110px 190px 0 #03a9f4, 120px 190px 0 #03a9f4, 130px 190px 0 #3f51b5, 140px 190px 0 #3f51b5, 150px 190px 0 #3f51b5, 160px 190px 0 #03a9f4, 170px 190px 0 #03a9f4, 180px 190px 0 #03a9f4, 10px 200px 0 #03a9f4, 20px 200px 0 #03a9f4, 30px 200px 0 #3f51b5, 40px 200px 0 #3f51b5, 50px 200px 0 #000000, 60px 200px 0 #03a9f4, 70px 200px 0 #03a9f4, 80px 200px 0 #03a9f4, 90px 200px 0 #03a9f4, 100px 200px 0 #03a9f4, 110px 200px 0 #03a9f4, 120px 200px 0 #03a9f4, 130px 200px 0 #3f51b5, 140px 200px 0 #000000, 150px 200px 0 #3f51b5, 160px 200px 0 #03a9f4, 170px 200px 0 #03a9f4, 180px 200px 0 #03a9f4;
-  height: 10px;
-  width: 10px;
-}
-
-.picture-frame {
-  margin: 0 auto;
-  width: 210px;
-  height: 210px;
-  background:
-  linear-gradient( 0deg, purple, rebeccapurple 40%, black );
-}
-
 html {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
 
 body {
-  width: 210px;
-  margin: 0 auto;
-  font-family: 'Space Mono', monospace;
+    width: 210px;
+    margin: 0 auto;
+    font-family: 'Space Mono', monospace;
 }
 
 header h1 {
-  margin: 1em 0 0.65em 0;
-  font-size: 4rem;
-  line-height: 0.5em;
-  
-  padding: 0;
-  text-transform: uppercase;
-  
+    margin: 1em 0 0.65em 0;
+    font-size: 4em;
+    line-height: 0.5em;
+
+    padding: 0;
+    text-transform: uppercase;
 }
 
 header .last_name {
-  text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 black;
 }
 
 p.head {
-  text-align: left;
-  text-align: center;
-  color: rebeccapurple;
+    text-align: left;
+    text-align: center;
+    color: rebeccapurple;
 }
 
 .intro p {
-  margin: 1em 0 0.65em 0;
-  padding: 0;
-  text-align: left;  
+    margin: 1em 0 0.65em 0;
+    padding: 0;
+    text-align: left;  
 }
 
 .cool {
-  font-family: 'Space Mono', monospace; 
-  color: #03a9f4;
-  text-decoration: none;
-  padding-left: 0.24rem;
-  padding-right: 0.24rem;
+    color: #03a9f4;
+    text-decoration: none;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
 }
 
 .cool:hover {
-  border-bottom: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
 }
 
 .color:visited {
-  color: rebeccapurple;
+    color: rebeccapurple;
 }
 
 header, section {
-  text-align: center;
+    text-align: center;
 }
 
 .intro {
-  width: 240px;
-  margin: 0 auto;
+    width: 240px;
+    margin: 0 auto;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
 }
 ul li {
-  display: block;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  padding: 0.5em 0;
+    display: block;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
 }
 
 ul li a {
-  margin: 0;
-  padding: 0;
-  display: block;
-  border: 1px dotted rebeccapurple;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: 1px dotted rebeccapurple;
 }
 
 ul li:hover {
-  color: black;
-  transition: background 0.25s ease-in-out;
+    color: black;
+    -webkit-transition: background 0.25s ease-in-out;
+    transition: background 0.25s ease-in-out;
 }
 
 ul li:hover a {
-  color: black;
-  transition: color 0.25s ease-in-out;
-  background-color: pink;
+    color: black;
+    -webkit-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
+    background-color: pink;
 }
+
+/*# sourceMappingURL=style.css.map */

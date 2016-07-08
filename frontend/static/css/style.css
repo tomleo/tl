@@ -1,190 +1,99 @@
 :root {
-    --primaryColor: rgba(255, 214, 121, 0.5);
-    --primaryFont: 'Londrina Outline', cursive;
-    --secondaryFont: 'Alegreya', serif;
-    --accentFont: Pacifico;
-    --primaryAltFont: 'Londrina Solid', cursive;
-    --nav-bgcolor: rgba(0,0,0,0.1);
-    --link-color: rgba(12, 43, 117, 1);
+    --primaryColor: white;
+    --primaryBackgroundColor: black;
+    --primaryFontStack: 'Space Mono', monospace;
+    --secondaryColor: rebeccapurple;
+    --highlightColor: #03a9f4;
+    --highlightColorAlt: pink;
 }
 
-/* Modules */
-h1 {
-    font-family: var(--primaryFont);
+html {
+    background: var(--primaryBackgroundColor);
+    color: var(--primaryColor);
 }
-h2 {
-    font-size: 2em;
-    font-family: var(--primaryFont);
-    color: rgba(0,0,0,0.5);
-    margin: 1em 0 0.2em 0;
-}
-
-p {
-    margin-top: 0.2em;
-    font-family: var(--secondaryFont);
-}
-
-html, body {
-    font-family: var(--secondaryFont);
-    background-color: rbga(255, 255, 255, 1);
-}
-
-nav {
-    margin-left: -1em;
-}
-
-footer p {
-    color: rgba(0,0,0,0.6);
-    font-family: var(--secondaryFont);
-}
-
-a {
-    
-    color: var(--link-color);
-    text-decoration: none;
-    border-bottom: 1px solid #8D9AAE;
-}
-a:active,
-.a-is-active {
-
-}
-a:hover,
-.a-is-hover {
-    border-bottom: 1px solid var(--link-color);
-}
-a:visited,
-.a-is-visited {
-    color: rgba(127, 55, 173, 0.86);
-}
-
-.fa-external-link {
-    font-size: 0.5em;
-    text-decoration: none;
-}
-
-/* Layout */
-html, body {
-    margin: 0;
-    padding: 0;
-
-}
-
-header, footer, #main {
-    margin-left: 1em;
-}
-
-
-nav {
-    background-color: var(--nav-bgcolor);
-}
-
-nav ul.mainlinks {
-    margin-left: 2em;
-}
-
-
-/* Text Main */
-.tm {
-    font-family: var(--primaryFont);
-    font-size: 3em;
-    line-height: 0.9;
-    margin-bottom: 0;
-}
-
-/* Text Accent */
-.ta {
-    font-family: var(--accentFont);
-    font-weight: 400;
-    font-size: 0.4em;
-    margin-left: -0.3em;
-    text-transform: lowercase;
-    padding-left: 0.125em;
-}
-
-/* Test Intro */
-.ti {
-    font-weight: 400;
-    font-family: var(--secondaryFont);
-    color: rgba(0,0,0,0.8);
-    margin: 0.7em 0 0 0;
-    background-color: rgba(0,0,0,0.2);
-    margin-left: -1em;
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 
 body {
-    font-family: Georgia;
+    width: 210px;
+    margin: 0 auto;
+    font-family: var(--primaryFontStack);
 }
 
+header h1 {
+    margin: 1em 0 0.65em 0;
+    font-size: 4em;
+    line-height: 0.5em;
 
-
-#qr-code {
-    display: none;
+    padding: 0;
+    text-transform: uppercase;
 }
 
-.mainlinks li {
-    display: inline-block;
-    padding: 0 1em 0 1em;
+header .last_name {
+    text-shadow: 1px 1px 0 var(--primaryBackgroundColor);
+}
+
+p.head {
+    text-align: left;
+    text-align: center;
+    color: var(--secondaryColor);
+}
+
+.intro p {
+    margin: 1em 0 0.65em 0;
+    padding: 0;
+    text-align: left;  
+}
+
+.cool {
+    color: var(--highlightColor);
+    text-decoration: none;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+}
+
+.cool:hover {
+    border-bottom: 1px solid var(--secondaryColor);
+}
+
+.color:visited {
+    color: var(--secondaryColor);
+}
+
+header, section {
     text-align: center;
 }
 
-ul.mainlinks {
+.intro {
+    width: 240px;
+    margin: 0 auto;
+}
+
+ul {
     margin: 0;
-    padding: 0.5em 0 0.5em 0;
+    padding: 0;
+    margin: 0 auto;
 }
-
-.mainlinks li:first-child {
-    padding: 0 1em 0 0;
-}
-
-.mainlinks li:last-child {
-    padding: 0 0 0 1em;
-}
-
-.mainlinks li a {
-    text-decoration: none;
-}
-
-.mainlinks li h5 {
-    color: rgba(0, 0, 0, 0.7);
+ul li {
+    display: block;
     margin: 0;
-    font-family: var(--secondaryFont);
-    font-weight: 400;
-
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
 }
 
-.mainlinks--text-hover {
-   color: rgba(0,0,0,1);
+ul li a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: 1px dotted var(--secondaryColor);
 }
 
-.mainlinks li h5:hover {
-    color: rgba(0,0,0,1);
+ul li:hover {
+    color: black;
+    transition: background 0.25s ease-in-out;
 }
 
-.mainlinks li svg {
-    width: 30px;
+ul li:hover a {
+    color: var(--primaryBackgroundColor);
+    transition: color 0.25s ease-in-out;
+    background-color: var(--highlightColorAlt);
 }
-
-#icon-twitter,
-#icon-blog,
-#icon-bitbucket,
-#icon-opensource,
-#icon-linkedin,
-#icon-resume {
-    fill: rgba(0,0,0,0.8);
-}
-
-#icon-twitter:hover,
-#icon-blog:hover,
-#icon-bitbucket:hover,
-#icon-opensource:hover,
-#icon-linkedin:hover,
-#icon-resume:hover {
-    fill: rgba(0,0,0,1);
-}
-
-#blue-pill { color: white; background-color: blue; border-radius: 20px; border-color: blue;}
-#red-pill { color: white; background-color: red; border-radius: 20px; border-color: red;}
