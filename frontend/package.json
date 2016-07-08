@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "TomLeo",
   "version": "1.0.0",
-  "description": "This is the frontend to my website",
+  "description": "The website of Tom Leo",
   "repository": {
     "type": "git",
     "url": "https://github.com/tomleo/tl"
@@ -30,8 +30,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tom Leo",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^0.14.5"
-  }
+  "license": "ISC"
 }
