@@ -1,0 +1,11 @@
+/* TEAM */
+Your title: Thomas Leo
+Site: tomleo.com
+Twitter: @tomleo
+Location: Boston, MA
+
+/* SITE */
+Last update: 2016/07/08
+Standards: HTML5, CSS3
+Software: Gnu/Linux, VIM
+
